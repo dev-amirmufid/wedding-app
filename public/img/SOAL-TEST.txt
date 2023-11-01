@@ -1,0 +1,45 @@
+#ALGORITMA: 
+========================
+1. buatlah sebuah fungsi jika user memasukan nilai 'n' maka jika nominal dari nilai tersebut kelipatan 3 maka output = "kelipatan tiga";
+contoh: n=10, maka output nya adalah
+1,
+2, 
+kelipatan tiga,
+4,
+5,
+kelipatan tiga,
+7,
+8,
+kelipatan 3,
+10
+
+2. buatlah sebuah fungsi jika user melekukan input sebuah string, maka output nya adalah initial dari string inputan tadi.
+contoh: - string = "DADANG KURNIAWAN" maka outputnya adalah="DK", 
+	- string = "SMK PASUNDAN SUBANG" maka output = "PSB";
+
+3. buatlah sebuah fungs untuk melakukan proses validasi sebuah string pada inputan, jika dalam string tersebut memiliki dua huruf yg sama, maka string tersebut tidak valid atau output="tidak valid", jika string tersebut unik (tidak ada huruf yg sama) maka output="unik".
+
+#DATABASE: 
+========================
+1. Terdapat field periode (tipe data: varchar(7)) pada table X berisi record sbb: 
+
+01-2010
+01-2009
+02-2010
+03-2009
+
+Buat SQL Statement untuk mengurutkan record tersebut sehingga hasilnya menjadi:
+01-2009
+03-2009
+01-2010
+02-2010
+
+
+2. design sebuah database berisi table-table dan field-field yang dibutuhkan untuk sebuah 
+   sistem transaksi peminjaman CD (dengan category CD film, game, software, musik).
+
+3. dari database/table yang dibuat pada point 2, buat sebuah interface untuk memberikan informasi:
+
+	- a. total nilai transaksi dari masing-masing peminjaman CD film, game, software, dan musik.
+	- b. 10 CD yang paling banyak dipinjam.
+	- c. filter untuk proses sorting data

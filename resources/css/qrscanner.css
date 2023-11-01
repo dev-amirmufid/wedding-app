@@ -1,0 +1,195 @@
+/** Common CSS for all buttons & selector. */
+
+/* CSS by Github. Source: https://getcssscan.com/css-buttons-examples */
+/* region */
+button.html5-qrcode-element,
+select.html5-qrcode-element,
+button.scanapp-button {
+    appearance: none;
+    background-color: #fafbfc;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+        rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+button.html5-qrcode-element:hover,
+select.html5-qrcode-element:hover,
+button.scanapp-button:hover {
+    background-color: #f3f4f6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+button.html5-qrcode-element:disabled,
+select.html5-qrcode-element:disabled,
+button.scanapp-button:disabled {
+    background-color: #fafbfc;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959da5;
+    cursor: default;
+}
+
+button.html5-qrcode-element:active,
+select.html5-qrcode-element:active,
+button.scanapp-button:hover {
+    background-color: #edeff2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+}
+
+button.html5-qrcode-element:focus,
+select.html5-qrcode-element:focus,
+button.scanapp-button:focus {
+    outline: 1px transparent;
+}
+
+button.html5-qrcode-element:before,
+select.html5-qrcode-element:before,
+button.scanapp-button::before {
+    display: none;
+}
+
+button.html5-qrcode-element:-webkit-details-marker,
+select.html5-qrcode-element:-webkit-details-marker,
+button.scanapp-button:-webkit-details-marker {
+    display: none;
+}
+
+/* Torch button. */
+button#html5-qrcode-button-torch.html5-qrcode-button-torch-on,
+button.scanapp-button.enticing {
+    background-color: #fff000;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 200ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button#html5-qrcode-button-torch.html5-qrcode-button-torch-on:not(
+        :disabled
+    ):hover,
+button#html5-qrcode-button-torch.html5-qrcode-button-torch-on:not(
+        :disabled
+    ):focus,
+button.scanapp-button.enticing:not(:disabled):hover,
+button.scanapp-button.enticing:not(:disabled):focus {
+    outline: 0;
+    background: #f4e603;
+}
+
+button#html5-qrcode-button-torch.html5-qrcode-button-torch-on:disabled,
+button.scanapp-button.enticing:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+}
+
+img[alt="Info icon"] {
+    display: none;
+}
+
+#qr_scanner__scan_region img {
+    display: initial !important;
+}
+
+#qr_scanner__dashboard_section_csr {
+    display: flex !important;
+    text-align: center !important;
+    flex-direction: column !important;
+    gap: 5px;
+}
+
+#qr_scanner {
+    border: none !important;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+#qr_scanner__scan_region video {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari and Chrome */
+    -moz-transform: rotateY(180deg); /* Firefox */
+}
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    height: 60vh;
+}
+
+.each-slide-effect span {
+    padding: 20px;
+    text-align: center;
+}
+
+/* The device with borders */
+.smartphone {
+    position: relative;
+    width: 360px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+    width: 360px;
+    height: 640px;
+    background: white;
+}

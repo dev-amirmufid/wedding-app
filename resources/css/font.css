@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "AdineKirnberg"; /*Can be any text*/
+    src: local("AdineKirnberg"),
+        url("/fonts/Adine Kirnberg.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "monallesia";
+    src: url("/fonts/FireheartDemo-8My5n.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rellington"; /*Can be any text*/
+    src: local("Rellington"), url("/fonts/Rellington.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Paragraph"; /*Can be any text*/
+    src: local("Paragraph"), url("/fonts/Paragraph.ttf") format("truetype");
+}

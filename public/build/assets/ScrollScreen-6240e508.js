@@ -1,0 +1,1 @@
+import{a as l}from"./app-55aa7177.js";const a=a=>l("div",{className:`${(null==a?void 0:a.height)?"":"h-[calc(100vh-210px)]"} overflow-auto ${null==a?void 0:a.className}`,style:{height:a.height},children:a.children});export{a as S};

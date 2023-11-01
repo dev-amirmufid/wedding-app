@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "AdineKirnberg"; /*Can be any text*/
+    src: local("AdineKirnberg"),
+        url("/fonts/Adine Kirnberg.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rellington"; /*Can be any text*/
+    src: local("Rellington"), url("/fonts/Rellington.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Paragraph"; /*Can be any text*/
+    src: local("Paragraph"), url("/fonts/Paragraph.ttf") format("truetype");
+}
+
+.font-family-relington {
+    font-family: "Rellington";
+}
+
+.font-family-paragraph {
+    font-family: "Paragraph";
+}
+
+.qr-img > img {
+    max-height: 600px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.wpo-wedding-date {
+    margin-top: 20px !important;
+}
